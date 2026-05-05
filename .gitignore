@@ -1,0 +1,28 @@
+# Virtual environment
+.venv/
+
+# Sensitive credentials - NEVER push to GitHub
+config/service-account.json
+
+# Environment variables
+.env
+
+# Raw data files
+data/
+
+# Logs
+logs/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+.pytest_cache/
+
+# dbt
+crypto_market_dbt/target/
+crypto_market_dbt/dbt_packages/
+crypto_market_dbt/logs/
+
+# Mac files
+.DS_Store

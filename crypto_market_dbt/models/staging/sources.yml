@@ -1,0 +1,21 @@
+version: 2
+
+sources:
+  - name: raw_data
+    database: crypto-market-etl-pipeline
+    schema: raw_data
+    tables:
+      - name: crypto_market
+        columns:
+          - name: id
+            tests:
+              - not_null
+          - name: current_price
+            tests:
+              - not_null
+          - name: market_cap_rank
+            tests:
+              - not_null
+          - name: extracted_at
+            tests:
+              - not_null
